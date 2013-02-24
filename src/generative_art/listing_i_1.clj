@@ -10,7 +10,6 @@
 )
 
 (defn setup[]
-	(prn "in setup")
 	(background 150)
 	(stroke 0 50)
 	(fill 255 200)
