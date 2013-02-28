@@ -15,7 +15,7 @@
 	(fill 255 200)
 	(def xstart (random 10))
 	(def ynoise (random 10))
-	(translate (/ (width) 2) (/ (height) 2))
+	(translate (/ (width) 2) (/ (height) 2) 0)
 	(loop [y (- (/ (height) 8))
 		   ynoise (+ ynoise 0.02)
 		   x (- (/ (width) 8))
@@ -45,8 +45,15 @@
 			)))
 )
 
-(defsketch listing-i-1
-	:title "Listing i.1"
-	:setup setup
-	:size [640 480]
-	:renderer :p3d)
+(defn -main []
+	(sketch 
+		:title "Listing i.1"
+		:setup setup
+		:size [800 600]
+		:renderer :p3d))
+
+;(defsketch listing-i-1
+;	:title "Listing i.1"
+;	:setup setup
+;	:size [640 480]
+;	:renderer :p3d)

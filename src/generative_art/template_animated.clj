@@ -12,7 +12,9 @@
 	)
 
 ; replace sketch-name with your sketch name
-(defsketch sketch-name
-	:title "sketh name"
-	:setup setup
-	:size [640 480])
+(defn -main []
+	(sketch
+		:title "sketch name"
+		:setup setup
+		:draw draw
+		:size [800 600]))
