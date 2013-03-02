@@ -1,5 +1,5 @@
 ; replce [sketch name] with the name of this sketch
-(ns generative-art.listing-3-2
+(ns generative-art.listing-3-0
 	(:use quil.core))
 
 (defn check-x? [x border]
@@ -24,6 +24,6 @@
 ; replace sketch-name with your sketch name
 (defn -main []
 	(sketch
-		:title "listing 3.2"
+		:title "listing 3.0"
 		:setup setup
 		:size [800 600]))
