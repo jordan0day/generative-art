@@ -13,13 +13,13 @@
 	(stroke 20 50 70)
 	(let [step 10
 		  noise-start (random 10)
-		  xs (range 20 480 step)
+		  xs (range 20 481 step)
 		  ys (map 
 		  		(fn [ynoise]
 		  			(+ 10 (* 80 (noise ynoise))))
 		  		(range 
 		  			noise-start
-		  			(+ noise-start (* 0.1 (count xs)))
+		  			(+ noise-start (* 0.1 (count xs)) 0.1)
 		  			0.1))
 		  coords (map (fn [x y] {:x x :y y}) xs ys)]
 		(reduce 
